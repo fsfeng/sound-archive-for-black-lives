@@ -12,7 +12,8 @@ function DescriptionBox({ children }) {
       width={["full", "xl"]}
       fontFamily="text"
       lineHeight="200%"
-      fontSize={["sm", "md", "lg"]}
+      // fontSize={["sm", "sm", "md"]}
+      fontSize="sm"
     >
       {children}
     </Box>

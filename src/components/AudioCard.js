@@ -13,7 +13,8 @@ const AudioCard = (fields) => {
         color="orange.500"
         fontFamily="text"
         lineHeight="200%"
-        fontSize={["sm", "md", "lg"]}
+        // fontSize={["sm", "md", "lg"
+        fontSize="sm"
       >
         <b>{fields.DescriptionOfAudio}</b>
         <br />

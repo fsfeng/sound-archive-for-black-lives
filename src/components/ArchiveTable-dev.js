@@ -85,7 +85,7 @@ function ArchiveTable() {
           type="search"
           variant="outline"
           placeholder="Filter..."
-          errorBorderColor="orange.200"
+          errorBorderColor="orange.300"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
         />
