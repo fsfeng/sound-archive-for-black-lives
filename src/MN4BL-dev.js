@@ -14,7 +14,7 @@ import {
 
 import HeaderBox from "./components/HeaderBoxv1";
 import NavBar from "./components/NavBar-dev";
-import DescriptionBox from "./components/DescriptionBoxv2";
+import DescriptionBox from "./components/DescriptionBox-dev";
 import ArchiveTable from "./components/ArchiveTable-dev";
 
 // Theme
