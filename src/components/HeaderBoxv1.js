@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import { Box, Heading, Grid, Link, useTheme } from "@chakra-ui/core";
-import styled from "@emotion/styled";
+import { Box, Heading, Grid, Link, useTheme } from "@chakra-ui/react";
+import styled from "@emotion/react";
 
 // function HeaderBox({ children }) {
 //   const chakraTheme = useTheme();

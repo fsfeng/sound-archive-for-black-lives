@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Box, Grid, Link, useTheme } from "@chakra-ui/core";
+import { Box, Grid, Link, useTheme } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 function NavBar() {

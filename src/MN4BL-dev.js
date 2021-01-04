@@ -7,10 +7,17 @@ import {
   Skeleton,
   Divider,
   Box,
+  Container,
+  Center,
   Heading,
   Grid,
-  ThemeProvider
-} from "@chakra-ui/core";
+  GridItem,
+  ChakraProvider,
+  Text,
+  Flex,
+  Image,
+  Link
+} from "@chakra-ui/react";
 
 import HeaderBox from "./components/HeaderBoxv1";
 import NavBar from "./components/NavBar-dev";
@@ -23,42 +30,75 @@ import chakraTheme from "./theme/chakraTheme";
 export default function App() {
   return (
     <Fragment>
-      <Helmet>
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Assistant:wght@200;300&family=Noto+Sans&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet"
-        />
-      </Helmet>
+      <ChakraProvider theme={chakraTheme}>
+        {/* <HeaderBox /> */}
 
-      <ThemeProvider theme={chakraTheme}>
-        <Grid alignItems="center" justifyContent="center" alignContent="center">
-          {/* <HeaderBox /> */}
-          <NavBar />
+        <Box
+          w="100%"
+          pr={{ base: 6, md: 6 }}
+          pl={{ base: 6, md: 12 }}
+          pt="10"
+          pb="2"
+          bg="gray.100"
+          maxW="3xl"
+        >
+          <Heading
+            textAlign="left"
+            fontSize={["4xl", "3xl", "3xl"]}
+            fontFamily="heading"
+            lineHeight="100%"
+            color="custom.orange7"
+          >
+            {`GET LOUD FOR BLACK LIFE`}
+          </Heading>
+        </Box>
 
-          <Skeleton colorStart="pink" colorEnd="orange" height="2px" />
-
-          <DescriptionBox>
-            <Heading
-              textAlign="left"
-              fontSize={["2xl", "2xl", "3xl"]}
-              fontFamily="heading"
-              lineHeight="100%"
+        <Box display={{ sm: "flex" }} bg="gray.100">
+          <Box
+            pt={{ base: 4, md: 0 }}
+            pr={{ base: 6, md: 6 }}
+            pl={{ base: 6, md: 12 }}
+            pb={{ base: 6, md: 6 }}
+            bg="blue.100"
+          >
+            <Text
+              fontWeight="bold"
+              textTransform="uppercase"
+              fontSize="sm"
+              letterSpacing="wide"
+              color="teal.600"
             >
-              {`the 2020 files`}
-            </Heading>
-            This is the Box, and more of the box, and more words and more words
-            and more words. This is the Box, and more of the box, and more words
-            and more words and more words. This is the Box, and more of the box,
-            and more words and more words and more words.
-            {/* <Divider /> */}
-            <br />
-          </DescriptionBox>
-          <Skeleton colorStart="pink" colorEnd="orange" height="2px" />
-          <br />
+              ABOUT
+            </Text>
 
-          <ArchiveTable />
-        </Grid>
-      </ThemeProvider>
+            <Text mt={2} color="gray.500">
+              Getting a new business off the ground is a lot of hard work. Here
+              are five ideas you can use to find your first customers.
+            </Text>
+          </Box>
+
+          {/* <Box flexShrink={0}>
+            <Image
+              borderRadius="lg"
+              width={{ md: "80" }}
+              src="https://bit.ly/2jYM25F"
+              alt="Woman paying for a purchase"
+            />
+          </Box> */}
+
+          <Box flexShrink={0} width={{ sm: "60" }} bg="red.100">
+            <Box
+              pt={{ base: 4, md: 0 }}
+              pl="6"
+              pr={{ base: 6, md: 12 }}
+              pb={{ base: 6, md: 6 }}
+              bg="yellow.100"
+            >
+              <Text>ARCHIVE</Text>
+            </Box>
+          </Box>
+        </Box>
+      </ChakraProvider>
     </Fragment>
   );
 }

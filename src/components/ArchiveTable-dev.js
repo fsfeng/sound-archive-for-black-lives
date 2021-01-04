@@ -7,7 +7,7 @@ import {
   Stack,
   Input,
   FormControl
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 // import dotenv from "dotenv";
 import Airtable from "airtable";
 import AudioCard from "./AudioCard";

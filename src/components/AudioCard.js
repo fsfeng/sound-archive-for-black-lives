@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text } from "@chakra-ui/core";
+import { Box, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const AudioCard = (fields) => {
