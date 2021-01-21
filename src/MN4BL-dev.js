@@ -32,52 +32,51 @@ export default function App() {
     <Fragment>
       <ChakraProvider theme={chakraTheme}>
         {/* <HeaderBox /> */}
-
-        <Box
-          w="100%"
-          pr={{ base: 6, md: 6 }}
-          pl={{ base: 6, md: 12 }}
-          pt="10"
-          pb="2"
-          bg="gray.100"
-          maxW="3xl"
-        >
-          <Heading
-            textAlign="left"
-            fontSize={["4xl", "3xl", "3xl"]}
-            fontFamily="heading"
-            lineHeight="100%"
-            color="custom.orange7"
-          >
-            {`GET LOUD FOR BLACK LIFE`}
-          </Heading>
-        </Box>
-
-        <Box display={{ sm: "flex" }} bg="gray.100">
+        <Container maxW="5xl" centerContent>
           <Box
-            pt={{ base: 4, md: 0 }}
+            w="100%"
             pr={{ base: 6, md: 6 }}
             pl={{ base: 6, md: 12 }}
-            pb={{ base: 6, md: 6 }}
-            bg="blue.100"
+            pt="10"
+            pb="2"
+            bg="gray.100"
           >
-            <Text
-              fontWeight="bold"
-              textTransform="uppercase"
-              fontSize="sm"
-              letterSpacing="wide"
-              color="teal.600"
+            <Heading
+              textAlign="left"
+              fontSize={["4xl", "3xl", "3xl"]}
+              fontFamily="heading"
+              lineHeight="100%"
+              color="custom.orange7"
             >
-              ABOUT
-            </Text>
-
-            <Text mt={2} color="gray.500">
-              Getting a new business off the ground is a lot of hard work. Here
-              are five ideas you can use to find your first customers.
-            </Text>
+              {`GET LOUD FOR BLACK LIFE`}
+            </Heading>
           </Box>
 
-          {/* <Box flexShrink={0}>
+          <Box display={{ sm: "flex" }} bg="gray.100">
+            <Box
+              pt={{ base: 4, md: 0 }}
+              pr={{ base: 6, md: 6 }}
+              pl={{ base: 6, md: 12 }}
+              pb={{ base: 6, md: 6 }}
+              bg="blue.100"
+            >
+              <Text
+                fontWeight="bold"
+                textTransform="uppercase"
+                fontSize="sm"
+                letterSpacing="wide"
+                color="teal.600"
+              >
+                ABOUT
+              </Text>
+
+              <Text mt={2} color="gray.500">
+                Getting a new business off the ground is a lot of hard work.
+                Here are five ideas you can use to find your first customers.
+              </Text>
+            </Box>
+
+            {/* <Box flexShrink={0}>
             <Image
               borderRadius="lg"
               width={{ md: "80" }}
@@ -86,18 +85,19 @@ export default function App() {
             />
           </Box> */}
 
-          <Box flexShrink={0} width={{ sm: "60" }} bg="red.100">
-            <Box
-              pt={{ base: 4, md: 0 }}
-              pl="6"
-              pr={{ base: 6, md: 12 }}
-              pb={{ base: 6, md: 6 }}
-              bg="yellow.100"
-            >
-              <Text>ARCHIVE</Text>
+            <Box flexShrink={0} width={{ sm: "60" }} bg="red.100">
+              <Box
+                pt={{ base: 4, md: 0 }}
+                pl="6"
+                pr={{ base: 6, md: 12 }}
+                pb={{ base: 6, md: 6 }}
+                bg="yellow.100"
+              >
+                <Text>ARCHIVE</Text>
+              </Box>
             </Box>
           </Box>
-        </Box>
+        </Container>
       </ChakraProvider>
     </Fragment>
   );
