@@ -24,6 +24,9 @@ import NavBar from "./components/NavBar-dev";
 import DescriptionBox from "./components/DescriptionBox-dev";
 import ArchiveTable from "./components/ArchiveTable-dev";
 
+// Fonts
+import { Fonts } from "./theme/Fonts";
+
 // Theme
 import chakraTheme from "./theme/chakraTheme";
 
@@ -31,6 +34,7 @@ export default function App() {
   return (
     <Fragment>
       <ChakraProvider theme={chakraTheme}>
+        <Fonts />
         {/* <HeaderBox /> */}
         <Container maxW="5xl" centerContent>
           <Box
@@ -39,38 +43,29 @@ export default function App() {
             pl={{ base: 6, md: 12 }}
             pt="10"
             pb="2"
-            bg="gray.100"
+            // bg="gray.100"
           >
-            <Heading
-              textAlign="left"
-              fontSize={["4xl", "3xl", "3xl"]}
-              fontFamily="heading"
-              lineHeight="100%"
-              color="custom.orange7"
-            >
-              {`GET LOUD FOR BLACK LIFE`}
-            </Heading>
+            <Heading textStyle="title">{`GET LOUD FOR BLACK LIFE`}</Heading>
           </Box>
 
-          <Box display={{ sm: "flex" }} bg="gray.100">
+          <Box
+            display={{ sm: "flex" }}
+            // bg="gray.100"
+          >
             <Box
-              pt={{ base: 4, md: 0 }}
+              pt={{ base: 4, md: 4 }}
               pr={{ base: 6, md: 6 }}
               pl={{ base: 6, md: 12 }}
               pb={{ base: 6, md: 6 }}
-              bg="blue.100"
+              // bg="blue.100"
+              border="dotted"
+              borderColor="orange.200"
             >
-              <Text
-                fontWeight="bold"
-                textTransform="uppercase"
-                fontSize="sm"
-                letterSpacing="wide"
-                color="teal.600"
-              >
-                ABOUT
+              <Text textStyle="heading1">
+                Something here about this is who we are
               </Text>
 
-              <Text mt={2} color="gray.500">
+              <Text textStyle="text">
                 Getting a new business off the ground is a lot of hard work.
                 Here are five ideas you can use to find your first customers.
               </Text>
@@ -85,15 +80,21 @@ export default function App() {
             />
           </Box> */}
 
-            <Box flexShrink={0} width={{ sm: "60" }} bg="red.100">
+            <Box
+              flexShrink={0}
+              width={{ sm: "60" }}
+              bg="orange.100"
+              border="dotted"
+              borderColor="orange.200"
+            >
               <Box
-                pt={{ base: 4, md: 0 }}
+                pt={{ base: 4, md: 4 }}
                 pl="6"
                 pr={{ base: 6, md: 12 }}
                 pb={{ base: 6, md: 6 }}
-                bg="yellow.100"
+                // bg="yellow.100"
               >
-                <Text>ARCHIVE</Text>
+                <Text textStyle="heading1">Archive</Text>
               </Box>
             </Box>
           </Box>

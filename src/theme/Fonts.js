@@ -1,5 +1,6 @@
+import * as React from "react";
 import { Global } from "@emotion/react";
-const Fonts = () => (
+export const Fonts = () => (
   <Global
     styles={`
       /* Copied from https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap */
