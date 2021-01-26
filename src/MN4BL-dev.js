@@ -24,6 +24,8 @@ import NavBar from "./components/NavBar-dev";
 import DescriptionBox from "./components/DescriptionBox-dev";
 import ArchiveTable from "./components/ArchiveTable-dev";
 
+import ArchiveList from "./components/ArchiveList-dev.js";
+
 // Fonts
 import { Fonts } from "./theme/Fonts";
 
@@ -95,6 +97,7 @@ export default function App() {
                 // bg="yellow.100"
               >
                 <Text textStyle="heading1">Archive</Text>
+                <ArchiveList />
               </Box>
             </Box>
           </Box>
